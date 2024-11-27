@@ -1,0 +1,39 @@
+#galeria {
+    padding: 60px;
+    background-color: #f0f0f0; /* Cor de fundo leve para destacar a galeria */
+    text-align: center; /* Centraliza o texto e as imagens */
+}
+
+#galeria h2 {
+    color: #333; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+#foto-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas se necessário */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 10px; /* Espaçamento entre as imagens */
+}
+
+#foto-container img {
+    max-width: 50%;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas às imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para um efeito de profundidade */
+    transition: transform 0.3s ease; /* Suaviza a transição de efeito hover */
+}
+
+#foto-container img:hover {
+    transform: scale(5.05); /* Aumenta a imagem ligeiramente ao passar o mouse sobre ela */
+
+}
+#foto-container image {
+    width: 5px; /* Define a largura das imagens */
+    height: 150px; /* Define a altura das imagens */
+    object-fit: cover; /* Ajusta a imagem para preencher a caixa sem distorcer */
+    display: block; /* Remove o espaço abaixo da imagem */
+    margin-bottom: 10px; /* Adiciona um espaço entre as imagens */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do container */
+}
